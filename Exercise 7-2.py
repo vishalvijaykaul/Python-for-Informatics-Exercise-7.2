@@ -21,7 +21,7 @@ for line in fhandle:
 # pulls out the floating point number
 		colpos = line.find(':')
 		spam = line[colpos+1: ]
-		spam = spam.lstrip()
+	#	spam = spam.lstrip() # no need for this as the float(spam) below will handle the same
 		spam = float(spam)
 # pulls out the floating point number
 # adds the floating point number to the total
